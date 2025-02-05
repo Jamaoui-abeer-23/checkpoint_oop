@@ -20,13 +20,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/style/style.css" />
-    <title>Workshop DOM</title>
+    <title>Shopping Cart</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Shopping Card</a>
+          <a class="navbar-brand" href="#">Shopping Cart</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -46,117 +46,19 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
             </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <section class="shopping-card-container">
+      <section class="shopping-cart-container">
         <div class="total-price">
-          <span> Total price : </span>
-          <span class="total"> 0 $ </span>
+          <span>Total Price: </span>
+          <span class="total">0 $</span>
         </div>
-        <div class="list-products">
-          <!-- Product 1 : baskets -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img
-                src="/assets/baskets.png"
-                class="card-img-top"
-                alt="baskets"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Baskets</h5>
-                <p class="card-text">This is a basket</p>
-                <h4 class="unit-price">100 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 2 : socks -->
-
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="/assets/socks.png" class="card-img-top" alt="socks" />
-              <div class="card-body">
-                <h5 class="card-title">Socks</h5>
-                <p class="card-text">This is a socks</p>
-                <h4 class="unit-price">20 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 3 : bag -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="/assets/bag.png" class="card-img-top" alt="bag" />
-              <div class="card-body">
-                <h5 class="card-title">Bag</h5>
-                <p class="card-text">This is a Bag</p>
-                <h4 class="unit-price">50 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="list-products" id="product-list">
+          <!-- Dynamic content will be generated here -->
         </div>
       </section>
     </main>
