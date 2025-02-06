@@ -99,7 +99,8 @@ const cart = new ShoppingCart();
 const products = [
     new Product(1, 'Baskets', 100),
     new Product(2, 'Socks', 20),
-    new Product(3, 'Bag', 50)
+    new Product(3, 'Bag', 50),
+    new Product (4,'bracelet' , 75),
 ];
 
 // Add event listeners to the plus and minus buttons
